@@ -35,3 +35,31 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// Stack & Heap Memory
+
+// Stack stores Primitive datatype
+// pass by value
+
+let name1 = "abc"
+let name2 = name1
+name2 = "def"
+console.log(name1);
+console.log(name2);
+
+
+
+// Heap stores Non-Primitive datatype
+// pass by reference
+
+let user1 = {
+    email: "abc@gmail.com",
+    upi: "abc@sbi"
+}
+let user2 = user1
+user2.email = "def@gmail.com"
+
+console.log(user1);
+console.log(user2);
